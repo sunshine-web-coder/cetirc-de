@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!-- Mirrored from thememarch.com/demo/html/posing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 10:57:24 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="ThemeMarch" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <title>Heim - Cetirc Landing Page</title>
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script data-pagespeed-no-defer>
+      //<![CDATA[
+      (function () {
+        function f(a, b, d) {
+          if (a.addEventListener) a.addEventListener(b, d, !1);
+          else if (a.attachEvent) a.attachEvent("on" + b, d);
+          else {
+            var c = a["on" + b];
+            a["on" + b] = function () {
+              d.call(this);
+              c && c.call(this);
+            };
+          }
+        }
+        window.pagespeed = window.pagespeed || {};
+        var g = window.pagespeed;
+        function k(a) {
+          this.g = [];
+          this.f = 0;
+          this.h = !1;
+          this.j = a;
+          this.i = null;
+          this.l = 0;
+          this.b = !1;
+          this.a = 0;
+        }
+        function l(a, b) {
+          var d = b.getAttribute("data-pagespeed-lazy-position");
+          if (d) return parseInt(d, 0);
+          var d = b.offsetTop,
+            c = b.offsetParent;
+          c && (d += l(a, c));
+          d = Math.max(d, 0);
+          b.setAttribute("data-pagespeed-lazy-position", d);
+          return d;
+        }
+        function m(a, b) {
+          var d, c, e;
+          if (!a.b && (0 == b.offsetHeight || 0 == b.offsetWidth)) return !1;
+          a: if (b.currentStyle) c = b.currentStyle.position;
+          else {
+            if (
+              document.defaultView &&
+              document.defaultView.getComputedStyle &&
+              (c = document.defaultView.getComputedStyle(b, null))
+            ) {
+              c = c.getPropertyValue("position");
+              break a;
+            }
+            c = b.style && b.style.position ? b.style.position : "";
+          }
+          if ("relative" == c) return !0;
+          e = 0;
+          "number" == typeof window.pageYOffset
+            ? (e = window.pageYOffset)
+            : document.body && document.body.scrollTop
+            ? (e = document.body.scrollTop)
+            : document.documentElement &&
+              document.documentElement.scrollTop &&
+              (e = document.documentElement.scrollTop);
+          d =
+            window.innerHeight ||
+            document.documentElement.clientHeight ||
+            document.body.clientHeight;
+          c = e;
+          e += d;
+          var h = b.getBoundingClientRect();
+          h
+            ? ((e = h.top - d), (c = h.bottom))
+            : ((h = l(a, b)),
+              (d = h + b.offsetHeight),
+              (e = h - e),
+              (c = d - c));
+          return e <= a.f && 0 <= c + a.f;
+        }
+        k.prototype.m = function (a) {
+          p(a);
+          var b = this;
+          window.setTimeout(function () {
+            var d = a.getAttribute("data-pagespeed-lazy-src");
+            if (d)
+              if ((b.h || m(b, a)) && -1 != a.src.indexOf(b.j)) {
+                var c = a.parentNode,
+                  e = a.nextSibling;
+                c && c.removeChild(a);
+                a.c && (a.getAttribute = a.c);
+                a.removeAttribute("onload");
+                a.tagName &&
+                  "IMG" == a.tagName &&
+                  g.CriticalImages &&
+                  f(a, "load", function () {
+                    g.CriticalImages.checkImageForCriticality(this);
+                    b.b &&
+                      (b.a--, b.a || g.CriticalImages.checkCriticalImages());
+                  });
+                a.removeAttribute("data-pagespeed-lazy-src");
+                a.removeAttribute("data-pagespeed-lazy-replaced-functions");
+                c && c.insertBefore(a, e);
+                if ((c = a.getAttribute("data-pagespeed-lazy-srcset")))
+                  (a.srcset = c),
+                    a.removeAttribute("data-pagespeed-lazy-srcset");
+                a.src = d;
+              } else b.g.push(a);
+          }, 0);
+        };
+        k.prototype.loadIfVisibleAndMaybeBeacon = k.prototype.m;
+        k.prototype.s = function () {
+          this.h = !0;
+          q(this);
+        };
+        k.prototype.loadAllImages = k.prototype.s;
+        function q(a) {
+          var b = a.g,
+            d = b.length;
+          a.g = [];
+          for (var c = 0; c < d; ++c) a.m(b[c]);
+        }
+        function t(a, b) {
+          return a.a ? null != a.a(b) : null != a.getAttribute(b);
+        }
+        k.prototype.u = function () {
+          for (
+            var a = document.getElementsByTagName("img"), b = 0, d;
+            (d = a[b]);
+            b++
+          )
+            t(d, "data-pagespeed-lazy-src") && p(d);
+        };
+        k.prototype.overrideAttributeFunctions = k.prototype.u;
+        function p(a) {
+          t(a, "data-pagespeed-lazy-replaced-functions") ||
+            ((a.c = a.getAttribute),
+            (a.getAttribute = function (a) {
+              "src" == a.toLowerCase() &&
+                t(this, "data-pagespeed-lazy-src") &&
+                (a = "data-pagespeed-lazy-src");
+              return this.c(a);
+            }),
+            a.setAttribute("data-pagespeed-lazy-replaced-functions", "1"));
+        }
+        g.o = function (a, b) {
+          function d() {
+            if (!((c.b && a) || c.i)) {
+              var b = 200;
+              200 < new Date().getTime() - c.l && (b = 0);
+              c.i = window.setTimeout(function () {
+                c.l = new Date().getTime();
+                q(c);
+                c.i = null;
+              }, b);
+            }
+          }
+          var c = new k(b);
+          g.lazyLoadImages = c;
+          f(window, "load", function () {
+            c.b = !0;
+            c.h = a;
+            c.f = 200;
+            if (g.CriticalImages) {
+              for (
+                var b = 0, d = document.getElementsByTagName("img"), r = 0, n;
+                (n = d[r]);
+                r++
+              )
+                -1 != n.src.indexOf(c.j) &&
+                  t(n, "data-pagespeed-lazy-src") &&
+                  b++;
+              c.a = b;
+              c.a || g.CriticalImages.checkCriticalImages();
+            }
+            q(c);
+          });
+          b.indexOf("data") && (new Image().src = b);
+          f(window, "scroll", d);
+          f(window, "resize", d);
+        };
+        g.lazyLoadInit = g.o;
+      })();
+
+      pagespeed.lazyLoadInit(
+        true,
+        "../../../pagespeed_static/1.JiBnMqyl6S.gif"
+      );
+
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div class="cs-preloader cs-white_bg cs-center">
+      <div class="cs-preloader_in">
+        <img src="assets/img/logo.png" alt="Logo" />
+      </div>
+    </div>
+    <header
+      class="cs-site_header cs-style1 cs-sticky-header cs-primary_color cs-white_bg"
+    >
+      <div class="cs-main_header">
+        <div class="container">
+          <div class="cs-main_header_in">
+            <div class="cs-main_header_left">
+              <a class="cs-site_branding cs-accent_color" href="/">
+                <img src="assets/img/logo.png" alt="Logo" />
+                <span>Cetirc</span>
+              </a>
+            </div>
+            <div class="cs-main_header_center">
+              <div class="cs-nav">
+                <ul class="cs-nav_list">
+                  <li><a href="#home" class="cs-smoth_scroll">Heim</a></li>
+                  <li>
+                    <a href="javascript:void(0)" class="">Produkte</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Alice 1</a></li>
+                      <li><a href="#">Alice 2</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)" class="">Unternehmen</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="um.html">Um</a></li>
+                      <li><a href="#">Partner</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#pricing" class="cs-smoth_scroll">Ressourcen</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cs-main_header_right">
+              <div class="banner-btn">
+                <a href="#" class="cs-btn"><span>Lade App herunter</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="home">
+      <div class="cs-height_80 cs-height_lg_80"></div>
+      <section
+        class="cs-hero cs-style1 cs-bg"
+        data-src="assets/img/hero_bg.svg"
+      >
+        <div class="container nnnn">
+          <div class="cs-hero_text">
+            <div class="cs-hero_secondary_title">
+              Für alle Benutzer für immer kostenlos.
+            </div>
+            <h1 class="cs-hero_title">
+              Erleben Sie den hochmodernen Service zur Identifizierung von
+              Handvenen
+            </h1>
+            <div class="cs-hero_subtitle">
+              Einmal scannen und Sie können sich authentifizieren, Ihre
+              Identität nachweisen und gewinnen Zugangskontrolle und ewiges
+              Einkaufen. Es ist KOSTENLOS, SCHNELL und EINFACH.
+            </div>
+            <div class="banner-btn">
+              <a href="loslegen.html" class="cs-btn"><span>Loslegen</span></a>
+            </div>
+          </div>
+          <div class="cs-hero_img wow fadeInRight">
+            <img
+              src="assets/img/images/hero_img.png"
+              alt="Hero Image"
+              class=""
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
+            />
+          </div>
+          <div class="cs-hero_shapes">
+            <div class="cs-shape cs-shape_position1">
+              <img src="assets/img/shape/shape_1.svg" alt="Shape" />
+            </div>
+            <div class="cs-shape cs-shape_position2">
+              <img src="assets/img/shape/shape_2.svg" alt="Shape" />
+            </div>
+            <div class="cs-shape cs-shape_position3">
+              <img src="assets/img/shape/shape_3.svg" alt="Shape" />
+            </div>
+            <div class="cs-shape cs-shape_position4">
+              <img src="assets/img/shape/shape_4.svg" alt="Shape" />
+            </div>
+            <div class="cs-shape cs-shape_position5">
+              <img src="assets/img/shape/shape_5.svg" alt="Shape" />
+            </div>
+            <div class="cs-shape cs-shape_position6">
+              <img src="assets/img/shape/shape_6.svg" alt="Shape" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="cs-bg" data-src="assets/img/feature_bg.svg">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <!-- <div
+            class="cs-section_subtitle wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            Office & Inventory
+          </div> -->
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">Entdecken Sie unsere Produkte</h3>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row">
+          <div class="col-md-6 col-xl-6">
+            <div class="cs-height_25 cs-height_lg_0"></div>
+            <div class="cs-iconbox cs-style1">
+              <div class="cs-iconbox_icon cs-center">
+                <img
+                  alt="Icon"
+                  src="assets/img/icons/icon_box_1.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </div>
+              <div class="cs-iconbox_in">
+                <div class="cs-iconbox_number cs-primary_font">01</div>
+                <h3 class="cs-iconbox_title">Alice 1</h3>
+                <div class="cs-iconbox_subtitle" style="margin-bottom: 10px">
+                  Das Herzstück von Cetirc ist Alice 1. Entwickelt, um Ihnen
+                  dies zu ermöglichen Registrieren Sie sich, scannen Sie Ihre
+                  Handfläche, tätigen Sie Online-Zahlungen und profitieren Sie
+                  lebenslangen Zugriff auf alle unsere Produkte und Angebote.
+                  Herunterladen die Alice 1-App zu starten.
+                </div>
+                <a href="" class="cs-text_btn"
+                  ><span>Erfahren Sie mehr</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M13.3 17.275q-.3-.3-.288-.725q.013-.425.313-.725L16.15 13H5q-.425 0-.713-.288Q4 12.425 4 12t.287-.713Q4.575 11 5 11h11.15L13.3 8.15q-.3-.3-.3-.713q0-.412.3-.712t.713-.3q.412 0 .712.3L19.3 11.3q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325l-4.6 4.6q-.275.275-.687.275q-.413 0-.713-.3Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-md-6 col-xl-6">
+            <div class="cs-height_25 cs-height_lg_0"></div>
+            <div class="cs-iconbox cs-style1">
+              <div class="cs-iconbox_icon cs-center">
+                <img
+                  alt="Icon"
+                  src="assets/img/icons/icon_box_1.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </div>
+              <div class="cs-iconbox_in">
+                <div class="cs-iconbox_number cs-primary_font">02</div>
+                <h3 class="cs-iconbox_title">Alice 2</h3>
+                <div
+                  class="cs-iconbox_subtitle mb-4"
+                  style="margin-bottom: 10px"
+                >
+                  Alice 2 ist unser Flaggschiff, ein universeller und sicherer
+                  digitaler Zugangskontrolldienst für Palmvenen. Es ist Ihr
+                  Schlüssel zur Autorisierung jedes Zutrittskontrollsystems
+                  mithilfe unserer Handvenen-Authentifizierungstechnologie.
+                </div>
+                <a href="" class="cs-text_btn"
+                  ><span>Erfahren Sie mehr</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M13.3 17.275q-.3-.3-.288-.725q.013-.425.313-.725L16.15 13H5q-.425 0-.713-.288Q4 12.425 4 12t.287-.713Q4.575 11 5 11h11.15L13.3 8.15q-.3-.3-.3-.713q0-.412.3-.712t.713-.3q.412 0 .712.3L19.3 11.3q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325l-4.6 4.6q-.275.275-.687.275q-.413 0-.713-.3Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+        </div>
+        <div class="cs-height_75 cs-height_lg_45"></div>
+      </div>
+    </section>
+
+    <section id="about" class="cs-gradient_bg_1">
+      <div class="cs-height_100 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse-lg">
+          <div
+            class="col-xl-6 wow fadeInLeft"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            <div class="cs-left_full_width cs-space110">
+              <div class="cs-left_sided_img">
+                <img
+                  src="assets/img/about_img_1.png"
+                  alt="Ready to Take Your First Step"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="cs-height_0 cs-height_lg_40"></div>
+            <div class="cs-seciton_heading cs-style1">
+              <!-- <div class="cs-section_subtitle">About The POS</div> -->
+              <div class="cs-height_10 cs-height_lg_10"></div>
+              <h3 class="cs-section_title">Bereit für den ersten Schritt?</h3>
+            </div>
+            <div class="cs-height_20 cs-height_lg_20"></div>
+            <p>Das ist alles, was Sie brauchen, um loszulegen</p>
+            <div class="cs-height_15 cs-height_lg_15"></div>
+            <div class="cs-list_1_wrap">
+              <ul class="cs-list cs-style1 cs-mp0">
+                <li>
+                  <span class="cs-list_icon">
+                    <img
+                      alt="Tick"
+                      src="assets/img/icons/tick.svg"
+                      onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                      onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                    />
+                  </span>
+                  <div class="cs-list_right">
+                    <h3>Laden Sie die Alice 1-App kostenlos herunter:</h3>
+                    <p>
+                      Laden Sie Alice 1 herunter und registrieren Sie sich, um
+                      ein Online-Konto zu erstellen Profil und ID über alle
+                      Cetirc-Handflächenvenen und biometrisch Produkte und
+                      Partner. Dazu gehört auch Alice 2.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="cs-list_icon">
+                    <img
+                      alt="Tick"
+                      src="assets/img/icons/tick.svg"
+                      onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                      onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                    />
+                  </span>
+                  <div class="cs-list_right">
+                    <h3>Registrierung und Biometrie</h3>
+                    <p>
+                      Vervollständigen Sie KYC und grundlegende biometrische
+                      Daten und erhalten Sie Zugriff darauf Angebote der Stufen
+                      1 und 2, einschließlich der Durchführung von Zahlungen.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="cs-list_icon">
+                    <img
+                      alt="Tick"
+                      src="assets/img/icons/tick.svg"
+                      onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                      onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                    />
+                  </span>
+                  <div class="cs-list_right">
+                    <h3>
+                      Aktivieren Sie Ihr Profil mit dem Alice 1 Portable Devi
+                    </h3>
+                    <p>
+                      Aktivieren Sie Ihr Profil mit dem Alice 1-Gerät und
+                      genießen Sie alle Vorteile und Premium-Angebote von
+                      Cetirc, einschließlich eingeschränkter Zugangskontrolle
+                      und Zahlungen am Point-of-Sale (POS).
+                    </p>
+                  </div>
+                </li>
+                <div class="banner-btn s-btn">
+                  <a href="#" class="cs-btn"><span>Loslegen</span></a>
+                  <a href="#" class="cs-btn"><span>Lade App herunter</span></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs-height_100 cs-height_lg_70"></div>
+      <div class="cs-height_135 cs-height_lg_0"></div>
+    </section>
+
+    <section class="cs-bg" data-src="assets/img/feature_bg.svg">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">Sichere ID, nur Ihr Palm</h3>
+        </div>
+        <div class=""></div>
+        <p class="s-subtitle">
+          Die Handvenen-ID-Dienste Alice 1 und Alice 2 von Cetirc bieten eine
+          einzigartige, bequemere und sicherere Möglichkeit, Transaktionen und
+          Aktivitäten zu authentifizieren, die Ihre biometrischen Daten online
+          und offline erfordern
+        </p>
+        <div
+          class="banner-btn"
+          style="max-width: max-content; margin: auto; margin-top: 50px"
+        >
+          <a href="#" class="cs-btn"><span>Sehen, wie es funktioniert</span></a>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row align-items-center flex-column-reverse-lg"></div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_70"></div>
+    </section>
+
+    <section class="cs-gradient_bg_1">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">Bequeme Zahlungen mit Alice 1</h3>
+        </div>
+        <p class="s-subtitle" style="margin-top: 30px">
+          Wir haben Alice 1 entwickelt, um Ihre POS- und
+          Einzelhandelstransaktionen überall auf der Welt nahtlos und schnell zu
+          gestalten.
+        </p>
+        <div class="cs-list_1_wrap">
+          <ul
+            class="cs-list cs-style1 cs-mp0"
+            style="max-width: 600px; margin: auto; margin-top: 50px"
+          >
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>
+                  Registrieren Sie sich einmal und bezahlen Sie für immer Ihre Lieblingsartikel.
+                  irgendwo irgendwann
+                </h3>
+              </div>
+            </li>
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>
+                  Es ist kontaktlos und sicher: Alles, was Sie tun müssen, ist, mit der Maus darüber zu fahren
+                  Handfläche auf dem POS-Gerät
+                </h3>
+              </div>
+            </li>
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>
+                  Sie haben die volle Kontrolle: Sie entscheiden, wo und wann Sie oder verwenden
+                  Genehmigen Sie Ihre Palm-ID
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="banner-btn"
+          style="max-width: max-content; margin: auto; margin-top: 50px"
+        >
+          <a href="#" class="cs-btn"><span>Loslegen</span></a>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row align-items-center flex-column-reverse-lg"></div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_70"></div>
+    </section>
+
+    <section class="cs-bg" data-src="assets/img/feature_bg.svg">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">Nahtlose Zugangskontrolle mit Alice 2</h3>
+        </div>
+        <p class="s-subtitle" style="margin-top: 30px">
+          Durchqueren Sie alle eingeschränkten Orte, Eingänge, Ressourcen usw
+          Informationen mit Alice 2.
+        </p>
+        <div class="cs-list_1_wrap">
+          <ul
+            class="cs-list cs-style1 cs-mp0"
+            style="max-width: 600px; margin: auto; margin-top: 50px"
+          >
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>
+                  Es ist schnell, flexibel und sicher: Sie autorisieren den Zugriff mit
+                  nur deine Handfläche.
+                </h3>
+              </div>
+            </li>
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>
+                  Jeder hat eine einzigartige Identität, was für zusätzliche Zuverlässigkeit sorgt
+                  und Seelenfrieden.
+                </h3>
+              </div>
+            </li>
+            <li>
+              <span class="cs-list_icon">
+                <img
+                  alt="Tick"
+                  src="assets/img/icons/tick.svg"
+                  onload="pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                  onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"
+                />
+              </span>
+              <div class="cs-list_right">
+                <h3>Kontaktloser Zugangskontrolldienst, nur mit Ihrer Handfläche</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="banner-btn"
+          style="max-width: max-content; margin: auto; margin-top: 50px"
+        >
+          <a href="#" class="cs-btn"><span>Erfahren Sie mehr</span></a>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row align-items-center flex-column-reverse-lg"></div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_70"></div>
+    </section>
+
+    <section class="cs-gradient_bg_1">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">
+            Steigern Sie Ihr Geschäft mit Alice 1 und Alice 2
+          </h3>
+        </div>
+        <p class="s-subtitle" style="margin-top: 30px">
+          Wir haben die Palm-ID-Dienste Alice 1 und 2 entwickelt, um Ihr Unternehmen zu optimieren
+          indem wir Transaktionen, Zahlungen und Zugangskontrolle reibungslos und reibungslos gestalten
+          sicher. Um unsere Unternehmenshardware oder Unternehmenssoftware zu erhalten
+          Produkte, senden Sie uns bitte direkt eine Nachricht, und wir werden Sie durch alles führen
+          alle.
+        </p>
+
+        <div
+          class="banner-btn"
+          style="max-width: max-content; margin: auto; margin-top: 50px"
+        >
+          <a href="#" class="cs-btn"><span>Kontaktiere uns</span></a>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row align-items-center flex-column-reverse-lg"></div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_70"></div>
+    </section>
+
+    <footer class="cs-footer">
+      <div class="cs-height_75 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="footer_inner">
+          <div class="left_footer">
+            <div class="cs-footer_item">
+              <div class="cs-footer_widget_text">
+                <div class="cs-main_header_left">
+                  <a class="cs-site_branding cs-accent_color" href="/">
+                    <img src="assets/img/logo.png" alt="Logo" />
+                    <span class="f-logo-text">Cetirc</span>
+                  </a>
+                </div>
+                <p style="color: #ffffff; font-weight: bold"></p>
+              </div>
+              <div class="cs-height_30 cs-height_lg_30"></div>
+              <div class="cs-social_btns cs-style1">
+                © 2024 Cetirc. Alle Rechte vorbehalten.
+              </div>
+            </div>
+          </div>
+          <div class="right_footer">
+            <div class="footer_link">
+              <div class="cs-footer_item widget_nav_menu">
+                <h2 class="cs-widget_title">Links</h2>
+                <ul class="menu">
+                  <li><a href="#">Produkte</a></li>
+                  <li><a href="#">Wie es funktioniert</a></li>
+                  <li><a href="/Hilfe-bekommen.html">Hilfe bekommen</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_link">
+              <div class="cs-footer_item widget_nav_menu">
+                <h2 class="cs-widget_title">Unternehmen</h2>
+                <ul class="menu">
+                  <li><a href="um.html">Um</a></li>
+                  <li><a href="#">Kontaktiere uns</a></li>
+                  <li><a href="#">Nutzungsbedingungen</a></li>
+                  <li><a href="#">Offenlegung des Datenschutzes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_link">
+              <div class="cs-footer_item widget_nav_menu">
+                <h2 class="cs-widget_title">Folgen Sie uns</h2>
+                <ul class="menu d-flex gap-2">
+                  <li>
+                    <a
+                      target="_blank"
+                      class="border rounded-circle"
+                      href="https://x.com/cetirc_?s=21"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      class="border rounded-circle instagram"
+                      href="https://www.instagram.com/cetirc?igsh=d2Z0ejl4Z2ZvajNx&utm_source=qr"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <!-- <li><a target="_blank" href="#">Terms of Use</a></li>
+                  <li><a target="_blank" href="#">Data Privacy Disclosure</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="footer_link">
+              <div class="cs-footer_item widget_nav_menu app-google">
+                <img style="width: 150px; margin-bottom: 8px; border-radius: 8px;" src="assets/img/app-store.PNG" alt="">
+                <img style="width: 150px; border-radius: 8px;" src="assets/img/goole-play.PNG" alt="">
+              </div>
+            </div> -->
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="cs-footer_item widget_nav_menu">
+              <h2 class="cs-widget_title">Subscribe us</h2>
+              <form class="cs-newsletter">
+                <div class="cs-newsletter_text">
+                  Get Business news, tip and solutions to your problems from our
+                  experts.
+                </div>
+                <div class="cs-height_20 cs-height_lg_20"></div>
+                <input
+                  type="text"
+                  class="cs-form_field"
+                  placeholder="Enter your email"
+                />
+                <div class="cs-height_10 cs-height_lg_10"></div>
+                <button class="cs-btn cs-size_md w-100">
+                  <span>Subscribe</span>
+                </button>
+              </form>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="cs-height_40 cs-height_lg_30"></div>
+    </footer>
+
+    <script type="text/javascript" data-pagespeed-no-defer>
+      pagespeed.lazyLoadImages.overrideAttributeFunctions();
+    </script>
+    <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins/jquery.slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.counter.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from thememarch.com/demo/html/posing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 10:59:00 GMT -->
+</html>

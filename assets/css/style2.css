@@ -1,0 +1,165 @@
+.banner_get_started{
+    padding-top: 50px;
+}
+.s-subtitle.get-started-s-subtitle{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.list_right-get-started p span{
+    color: #1C2528;
+    font-weight: 600;
+}
+
+.banner-btn_get-started{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.feedbackform{
+    display: flex;
+    gap: 70px;
+}
+
+.feedbackform_left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedbackform_left .feedbackform_inner_left{
+    width: 100%;
+    min-height: 300px;
+    background-color: #D8EACC;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.feedbackform_left .img090{
+    width: 100%;
+    height: 140px;
+}
+
+.feedbackform_left img{
+    height: 140px;
+}
+
+.feedbackform_left h3{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.feedbackform_left p{
+    margin-bottom: 3px;
+}
+
+.feedbackform_left a{
+    border: 1px solid #292D27;
+    border-radius: 25px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.feedbackform_right{
+    width: 60%;
+}
+
+.feedbackform_right form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedbackform_right form h3{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.feedbackform_right form p{
+    margin-bottom: 3px;
+}
+
+.feedbackform_right form textarea{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    outline: none;
+    font-size: 15px;
+}
+
+.feedbackform_right form button{
+    background-color: #FFE01B;
+    border: 2px solid #292D27;
+    color: #292D27;
+    border-radius: 25px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+    .feedbackform{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedbackform_left, .feedbackform_right{
+        width: 100%;
+    }
+}
+
+/* About us page  */
+.banner_about_us{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+    .banner_about_us{
+        padding-top: 45px;
+    }
+}
+
+.cs-iconbox_in .MN7689{
+    font-weight: 600;
+}
+
+.subscribe__form{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* get help */
+.get_help{
+    max-width: 1000px;
+    margin: auto;
+}
+.get_help h4.cs-section_title_2{
+    font-weight: 500;
+}
+.get_help h5.cs-section_title_3{
+    font-weight: 500;
+    font-size: 20px;
+    color: #696969;
+}
+
+.menu .rounded-circle{
+    padding: 6px 8px 6px 9px;
+}
+.menu .rounded-circle.instagram{
+    padding-left: 10px;
+    padding-right: 10px;
+}
